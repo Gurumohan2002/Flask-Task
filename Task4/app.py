@@ -12,7 +12,7 @@ def sum(a,b):
     except Exception as e:
         return f"A error occured : {e}"
     
-@app.route('/ab',methods=["POST"])
+@app.route('/ab',methods=["GET","POST"])
 def sumab():
     data=request.get_json("data")
     a=data["a"]
